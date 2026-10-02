@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhijeet | IT student and web developer</title>
+  <meta name="description" content="Personal profile of Abhijeet, a B.Tech Information Technology student at Manipal Institute of Technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Abhijeet</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-role">B.Tech Information Technology, Manipal Institute of Technology</p>
+        <h1>Abhijeet<span class="caret" aria-hidden="true"></span></h1>
+        <p class="hero-intro">
+          I'm a first-year IT student who likes building things for the web and
+          solving problems on LeetCode. I'm happiest when an idea turns into
+          something people can click on.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <!-- Replace images/profile.svg with your own photo, e.g. images/profile.jpg,
+             and update the src below. -->
+        <img src="images/profile.svg" alt="Portrait of Abhijeet" width="400" height="500">
+      </figure>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="section-body prose">
+        <p>
+          I'm studying Information Technology at Manipal Institute of Technology,
+          and I've spent my first year getting comfortable with the foundations:
+          data structures, algorithms, databases and operating systems.
+        </p>
+        <p>
+          Outside lectures I build small web projects, practise problems in Java,
+          and work on a few team projects that let me try ideas on a bigger scale.
+          I like understanding why something works before I memorise how to use it.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="section-body">
+        <article class="entry">
+          <div class="entry-head">
+            <h3>B.Tech in Information Technology</h3>
+            <p class="entry-date">2024 to 2028</p>
+          </div>
+          <p class="entry-place">Manipal Institute of Technology, Manipal</p>
+          <p>Current CGPA: <strong>8.89</strong></p>
+          <p class="entry-note">
+            Coursework so far: databases, operating systems, algorithms and data structures.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="section-body skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>Java</li>
+            <li>C</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Web</h3>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools and libraries</h3>
+          <ul class="chips">
+            <li>Git</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>LaTeX</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="section-body">
+        <ul class="project-list">
+          <li>
+            <h3>Campus Club and Event Management System</h3>
+            <p>A database-backed app for clubs to publish events and students to find them. Built with MySQL, Express and React (Vite).</p>
+          </li>
+          <li>
+            <h3>Interactive System Design Laboratory</h3>
+            <p>A team project: a visual simulator where you drag together components like caches, queues and databases, then watch how the system behaves under load.</p>
+          </li>
+          <li>
+            <h3>Graph Algorithm Playground</h3>
+            <p>A visual tool for exploring how graph algorithms move through a graph, step by step.</p>
+          </li>
+          <li>
+            <h3>Typing Speed Tester</h3>
+            <p>A browser-based typing test that measures speed and accuracy.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="interests" class="section">
+      <h2>Interests</h2>
+      <div class="section-body interests">
+        <div>
+          <h3>Competitive programming</h3>
+          <p>I practise on LeetCode, mostly in Java, and have solved hundreds of problems. Sliding window is my current favourite pattern.</p>
+        </div>
+        <div>
+          <h3>Typing</h3>
+          <p>I practise on Monkeytype and average around 82 WPM at about 98% accuracy.</p>
+        </div>
+        <div>
+          <h3>Music</h3>
+          <p>Late-night playlists: slowed and reverb edits, electronic, dark hip-hop and Hindi indie.</p>
+        </div>
+        <div>
+          <h3>Gaming</h3>
+          <p>Casual sessions to unwind between assignments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="section-body">
+        <p class="contact-lead">Want to talk about a project, an internship or a LeetCode problem? Reach out.</p>
+        <ul class="contact-list">
+          <!-- Replace each placeholder below with your real details before publishing. -->
+          <li><span class="contact-label">Email</span> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+          <li><span class="contact-label">LeetCode</span> <a href="https://leetcode.com/u/your-username" target="_blank" rel="noopener">leetcode.com/u/your-username</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Abhijeet. Built with HTML and CSS.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+</body>
+</html>
