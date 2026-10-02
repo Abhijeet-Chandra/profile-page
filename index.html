@@ -7,7 +7,7 @@
   <meta name="description" content="Personal profile of Abhijeet, a B.Tech Information Technology student at Manipal Institute of Technology.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,12 +30,17 @@
 
     <section class="hero">
       <div class="hero-text">
-        <p class="hero-role">B.Tech Information Technology, Manipal Institute of Technology</p>
-        <h1>Abhijeet<span class="caret" aria-hidden="true"></span></h1>
+        <p class="hero-role">Third-year B.Tech in Information Technology, Manipal Institute of Technology</p>
+        <h1>Abhijeet</h1>
+
+        <p class="typing" role="img" aria-label="build. solve. repeat.">
+          <span class="typing-dim" aria-hidden="true">build. solve. repeat.</span>
+          <span class="typing-live" aria-hidden="true">build. solve. repeat.</span>
+        </p>
+
         <p class="hero-intro">
-          I'm a Third-year IT student who likes building things for the web and
-          solving problems on LeetCode. I'm happiest when an idea turns into
-          something people can click on.
+          I like building things for the web and solving problems on LeetCode.
+          I'm happiest when an idea turns into something people can click on.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">See my projects</a>
@@ -44,24 +49,24 @@
       </div>
 
       <figure class="portrait">
-        <!-- Replace images/profile.svg with your own photo, e.g. images/profile.jpg,
-             and update the src below. -->
-        <img src="images/profile.jpg" alt="Portrait of Abhijeet" width="400" height="500">
+        <div class="frame">
+          <img src="images/profile.jpg" alt="Portrait of Abhijeet" width="400" height="500">
+        </div>
       </figure>
     </section>
 
     <section id="about" class="section">
       <h2>About me</h2>
-      <div class="section-body prose">
-        <p>
-          I'm studying Information Technology at Manipal Institute of Technology,
-          and I've spent my first year getting comfortable with the foundations:
-          data structures, algorithms, databases and operating systems.
+      <div class="section-body about">
+        <p class="statement">
+          I study Information Technology at Manipal Institute of Technology,
+          and I like understanding why something works before I memorise how to use it.
         </p>
         <p>
-          Outside lectures I build small web projects, practise problems in Java,
-          and work on a few team projects that let me try ideas on a bigger scale.
-          I like understanding why something works before I memorise how to use it.
+          Over the past few years I've worked through the foundations: data
+          structures, algorithms, databases and operating systems. Outside lectures
+          I build small web projects, practise problems in Java, and work on team
+          projects that let me try ideas on a bigger scale.
         </p>
       </div>
     </section>
@@ -69,17 +74,19 @@
     <section id="education" class="section">
       <h2>Education</h2>
       <div class="section-body">
-        <article class="entry">
-          <div class="entry-head">
-            <h3>B.Tech in Information Technology</h3>
-            <p class="entry-date">2024 to 2028</p>
-          </div>
-          <p class="entry-place">Manipal Institute of Technology, Manipal</p>
-          <p>Current CGPA: <strong>8.89</strong></p>
-          <p class="entry-note">
-            Coursework so far: databases, operating systems, algorithms and data structures.
-          </p>
-        </article>
+        <h3 class="degree">B.Tech in Information Technology</h3>
+        <p class="degree-place">Manipal Institute of Technology, Manipal</p>
+        <p class="degree-note">
+          Current CGPA: <strong>8.89</strong>. Coursework so far: databases,
+          operating systems, algorithms and data structures.
+        </p>
+
+        <ol class="years" aria-label="Progress through the four-year degree">
+          <li class="done"><span class="year-name">Year 1</span><span class="year-date">2024 to 25</span></li>
+          <li class="done"><span class="year-name">Year 2</span><span class="year-date">2025 to 26</span></li>
+          <li class="now"><span class="year-name">Year 3</span><span class="year-date">2026 to 27, in progress</span></li>
+          <li><span class="year-name">Year 4</span><span class="year-date">2027 to 28</span></li>
+        </ol>
       </div>
     </section>
 
@@ -88,7 +95,7 @@
       <div class="section-body skills-grid">
         <div>
           <h3>Languages</h3>
-          <ul class="chips">
+          <ul class="skill-list">
             <li>Java</li>
             <li>C</li>
             <li>JavaScript</li>
@@ -97,7 +104,7 @@
         </div>
         <div>
           <h3>Web</h3>
-          <ul class="chips">
+          <ul class="skill-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>React</li>
@@ -106,7 +113,7 @@
         </div>
         <div>
           <h3>Tools and libraries</h3>
-          <ul class="chips">
+          <ul class="skill-list">
             <li>Git</li>
             <li>NumPy</li>
             <li>Pandas</li>
@@ -167,11 +174,30 @@
       <div class="section-body">
         <p class="contact-lead">Want to talk about a project, an internship or a LeetCode problem? Reach out.</p>
         <ul class="contact-list">
-          <!-- Replace each placeholder below with your real details before publishing. -->
-          <li><span class="contact-label">Email</span> <a href="mailto:abhijeet.mitmpl2024@learner.manipal.edu">Email</a></li>
-          <li><span class="contact-label">GitHub</span> <a href="https://github.com/abhijeet-chandra" target="_blank" rel="noopener">Github</a></li>
-          <li><span class="contact-label">LinkedIn</span> <a href="https://www.linkedin.com/in/abhijeet-chandra-169952272" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><span class="contact-label">LeetCode</span> <a href="https://leetcode.com/u/abhijeet_chandra04" target="_blank" rel="noopener">Leetcode</a></li>
+          <li>
+            <a class="contact-row" href="mailto:abhijeet.mitmpl2024@learner.manipal.edu">
+              <span class="contact-name">Email</span>
+              <span class="contact-handle">abhijeet.mitmpl2024@learner.manipal.edu</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-row" href="https://github.com/abhijeet-chandra" target="_blank" rel="noopener">
+              <span class="contact-name">GitHub</span>
+              <span class="contact-handle">github.com/abhijeet-chandra</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-row" href="https://www.linkedin.com/in/abhijeet-chandra-169952272" target="_blank" rel="noopener">
+              <span class="contact-name">LinkedIn</span>
+              <span class="contact-handle">linkedin.com/in/abhijeet-chandra-169952272</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-row" href="https://leetcode.com/u/abhijeet_chandra04" target="_blank" rel="noopener">
+              <span class="contact-name">LeetCode</span>
+              <span class="contact-handle">leetcode.com/u/abhijeet_chandra04</span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
